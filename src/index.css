@@ -1,12 +1,12 @@
 :root {
-	--bg-color: #a4a9ad;
+	--bg-color: #df6aff;
 	--accent-bg-color: #23001e;
 	--primary-text-color: black;
 	--secondary-text-color: #e2e4f6;
 	--links-text-color: #20a39e;
 	--btn-primary-color: #ef5b5b;
 	--btn-secondary-color: #942911;
-	--btn-xtra-color: #6a2e0c;
+	--btn-xtra-color: #475b09;
 
 	--font-size-html: 16px;
 
@@ -106,6 +106,26 @@ header {
 	justify-content: center;
 
 	background-color: var(--accent-bg-color);
-    padding: var(--spacing-2xl) 0;
-    color: var(--secondary-text-color);
+	padding: var(--spacing-2xl) 0;
+	color: var(--secondary-text-color);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	background-color: var(--bg-color);
+	padding: var(--spacing-2xl) 0;
+}
+
+.exercise-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	padding: var(--spacing-lg);
+	background-color: var(--accent-bg-color);
+	color: var(--secondary-text-color);
+	max-width: 600px;
 }
