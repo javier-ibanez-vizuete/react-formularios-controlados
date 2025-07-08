@@ -114,19 +114,26 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-    gap: 1rem;
+	gap: 1rem;
 
 	background-color: var(--bg-color);
 	padding: var(--spacing-2xl) 0;
 }
 
+button {
+	padding: var(--spacing-xs);
+	border: none;
+	background-color: var(--btn-primary-color);
+}
+
 .exercise-container {
 	display: flex;
 	flex-direction: column;
+	align-self: center;
 	gap: 1.5rem;
 
 	padding: var(--spacing-lg);
 	background-color: var(--accent-bg-color);
 	color: var(--secondary-text-color);
-	max-width: 600px;
+	width: 600px;
 }

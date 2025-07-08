@@ -37,13 +37,6 @@
 	outline: none;
 	border: none;
 }
-
-.contact-form > button {
-	padding: var(--spacing-xs);
-	border: none;
-	background-color: var(--btn-primary-color);
-}
-
 .form-error {
 	color: red;
 }

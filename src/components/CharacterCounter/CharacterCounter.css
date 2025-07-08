@@ -1,0 +1,9 @@
+.exercise-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.exercise-container > div > label {
+    align-self: center;
+}

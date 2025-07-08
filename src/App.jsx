@@ -1,5 +1,6 @@
+import { CharacterCounter } from "./components/CharacterCounter/CharacterCounter";
 import { ContactForm } from "./components/ContactForm/ContactForm";
-import { InputName } from "./components/ContactForm/InputName/InputName";
+import { InputName } from "./components/InputName/InputName";
 
 export const App = () => {
 	return (
@@ -10,6 +11,7 @@ export const App = () => {
 			<main>
 				<ContactForm />
 				<InputName />
+				<CharacterCounter />
 			</main>
 		</>
 	);
