@@ -114,6 +114,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+    gap: 1rem;
 
 	background-color: var(--bg-color);
 	padding: var(--spacing-2xl) 0;
