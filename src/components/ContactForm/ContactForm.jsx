@@ -23,7 +23,8 @@ export const ContactForm = () => {
 		setError("");
 		if (!form.name) return setError("Debes rellenar el Campo Nombre");
 		if (!form.email) return setError("Debes rellenar el Campo Email");
-		if (!form.email.includes("@") || !form.email.includes(".")) return setError("La direccion Email no es valida --> '@'");
+		if (!form.email.includes("@") || !form.email.includes("."))
+			return setError("La direccion Email no es valida --> '@'");
 		if (!form.reason) return setError("Debes Elegir un motivo de contacto");
 		if (!form.message) return setError("Debes rellenar el Campo Mensage adicional");
 
@@ -87,12 +88,12 @@ export const ContactForm = () => {
 				<small>Los campos con (*) son Obligatiorios</small>
 			</div>
 			{error && (
-				<div className="form-error ">
+				<div className="error">
 					<h4>{error}</h4>
 				</div>
 			)}
 			{send && (
-				<div className="form-send">
+				<div className="aproved">
 					<h4>Formulario Enviado</h4>
 				</div>
 			)}

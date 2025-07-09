@@ -137,3 +137,11 @@ button {
 	color: var(--secondary-text-color);
 	width: 600px;
 }
+
+.error {
+	color: red;
+}
+
+.aproved {
+	color: green;
+}

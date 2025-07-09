@@ -1,6 +1,7 @@
 import { CharacterCounter } from "./components/CharacterCounter/CharacterCounter";
 import { ContactForm } from "./components/ContactForm/ContactForm";
 import { InputName } from "./components/InputName/InputName";
+import { VerificatorAge } from "./components/VerificatorAge/VerificatorAge";
 
 export const App = () => {
 	return (
@@ -12,6 +13,7 @@ export const App = () => {
 				<ContactForm />
 				<InputName />
 				<CharacterCounter />
+				<VerificatorAge />
 			</main>
 		</>
 	);

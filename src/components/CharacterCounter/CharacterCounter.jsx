@@ -6,9 +6,9 @@ export const CharacterCounter = () => {
 	const [number, setNumber] = useState(0);
 
 	const onInputChange = ({ target: { value } }) => {
-        setText(value)
-        setNumber(value.length);
-    };
+		setText(value);
+		setNumber(value.trim().length);
+	};
 
 	const onButtonClick = () => {
 		setNumber(0);
