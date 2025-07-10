@@ -1,3 +1,4 @@
+import { BookingForm } from "./components/BookingForm/BookingForm";
 import { CharacterCounter } from "./components/CharacterCounter/CharacterCounter";
 import { ContactForm } from "./components/ContactForm/ContactForm";
 import { FavoriteColor } from "./components/FavoriteColor/FavoriteColor";
@@ -9,7 +10,7 @@ import { VerificatorAge } from "./components/VerificatorAge/VerificatorAge";
 import { products } from "./utils/products/products";
 
 export const App = () => {
-	const randomNumber = Math.floor(Math.random() * (products.length - 1 - 0 + 1)) + 0;
+	const randomNumber = () => Math.floor(Math.random() * (products.length - 1 - 0 + 1)) + 0;
 
 	return (
 		<>
@@ -24,7 +25,8 @@ export const App = () => {
 				<LoginForm />
 				<FavoriteColor />
 				<FeedbackForm />
-				<RatingButtons product={products[randomNumber]} />
+				<RatingButtons product={products[randomNumber()]} />
+				<BookingForm />
 			</main>
 		</>
 	);

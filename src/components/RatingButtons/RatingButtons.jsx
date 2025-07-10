@@ -3,16 +3,12 @@ import "./RatingButtons.css";
 
 export const RatingButtons = ({ product }) => {
 	const [rate, setRate] = useState(product.rate);
-	console.log("Calificacion inicial", product.rate);
-
 	const stars = [1, 2, 3, 4, 5];
+
 	if (!product.name) return null;
 
-	const handleButtonClick = (star) => {
-		console.log(star);
-		setRate(star);
-		// NO SE COMO ACTUALIZAR EL PRODUCTO (product.rate = rate) no funciona
-	};
+	const handleButtonClick = (star) => setRate(star);
+	// NO SE COMO ACTUALIZAR EL PRODUCTO ==> (product.rate = rate) no funciona
 
 	return (
 		<div className="rating-buttons exercise-container">
