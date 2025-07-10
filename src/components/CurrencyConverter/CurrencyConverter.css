@@ -1,0 +1,13 @@
+.currency-converter .inputs-container {
+	flex-direction: row;
+	justify-content: center;
+}
+
+.inputs-container input,
+.inputs-container select {
+	flex: 1;
+}
+
+.result-container >h4 {
+    align-self: center;
+}

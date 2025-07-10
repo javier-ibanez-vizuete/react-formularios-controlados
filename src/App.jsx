@@ -1,6 +1,7 @@
 import { BookingForm } from "./components/BookingForm/BookingForm";
 import { CharacterCounter } from "./components/CharacterCounter/CharacterCounter";
 import { ContactForm } from "./components/ContactForm/ContactForm";
+import { CurrencyConverter } from "./components/CurrencyConverter/CurrencyConverter";
 import { FavoriteColor } from "./components/FavoriteColor/FavoriteColor";
 import { FeedbackForm } from "./components/FeedbackForm/FeedbackForm";
 import { InputName } from "./components/InputName/InputName";
@@ -27,6 +28,7 @@ export const App = () => {
 				<FeedbackForm />
 				<RatingButtons product={products[randomNumber()]} />
 				<BookingForm />
+				<CurrencyConverter />
 			</main>
 		</>
 	);
