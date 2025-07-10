@@ -95,6 +95,10 @@ input {
 	padding: var(--spacing-xs);
 }
 
+img {
+	width: 100%;
+}
+
 .container {
 	width: var(--container-width);
 	margin: 0 auto;
