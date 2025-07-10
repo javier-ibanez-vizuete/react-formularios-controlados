@@ -30,9 +30,22 @@ export const FeedbackForm = () => {
 			{!verified && (
 				<div>
 					<label htmlFor="userName">Nombre</label>
-					<input type="text" name="userName" id="userName" value={userName} onChange={handleInputChange} />
+					<input
+						type="text"
+						name="userName"
+						id="userName"
+						value={userName}
+						onChange={handleInputChange}
+						placeholder="Introduce un nombre"
+					/>
 					<label htmlFor="userMessage">Añade un comentario</label>
-					<textarea name="userMessage" id="userMessage" value={userMessage} onChange={handleInputChange} />
+					<textarea
+						name="userMessage"
+						id="userMessage"
+						value={userMessage}
+						onChange={handleInputChange}
+						placeholder="Introduce un mensaje adicional"
+					/>
 					<button onClick={handleFormClick}>Enviar</button>
 					{error && <h4 className="error">{error}</h4>}
 				</div>

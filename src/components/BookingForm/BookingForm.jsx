@@ -46,7 +46,7 @@ export const BookingForm = () => {
 						id="userName"
 						value={userName}
 						onChange={handleInputChange}
-						placeholder=""
+						placeholder="Introduce tu nombre"
 					/>
 				</div>
 				<div className="input-container">
@@ -57,7 +57,7 @@ export const BookingForm = () => {
 						id="userEmail"
 						value={userEmail}
 						onChange={handleInputChange}
-						placeholder=""
+						placeholder="Introduce un correo electrónico"
 					/>
 				</div>
 				<div className="input-container">
@@ -68,7 +68,6 @@ export const BookingForm = () => {
 						id="userDate"
 						value={userDate}
 						onChange={handleInputChange}
-						placeholder=""
 						min={today}
 					/>
 				</div>
