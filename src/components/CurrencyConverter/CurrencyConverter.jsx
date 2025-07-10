@@ -44,7 +44,14 @@ export const CurrencyConverter = () => {
 		<div className="currency-converter exercise-container">
 			<h2>Conversor de Euros</h2>
 			<div className="inputs-container">
-				<input type="number" name="quantity" id="quantity" value={quantity} onChange={handleInputChange} placeholder="Introduce una cantidad"/>
+				<input
+					type="number"
+					name="quantity"
+					id="quantity"
+					value={quantity}
+					onChange={handleInputChange}
+					placeholder="Introduce una cantidad"
+				/>
 				<select name="currency" id="currency" value={currency} onChange={handleInputChange}>
 					<option value="">Elige una opción</option>
 					{Object.entries(conversionRates).map(([key]) => (
@@ -58,7 +65,7 @@ export const CurrencyConverter = () => {
 			{verified && (
 				<div className="result-container">
 					<h4>
-						{quantity}€ son   {newCurrency} {currency}
+						{quantity}€ son {newCurrency} {currency}
 					</h4>
 				</div>
 			)}

@@ -7,7 +7,7 @@ const LOGIN_USER = {
 	password: "",
 };
 
-export const LoginForm = () => {
+export const LoginForm = ({users}) => {
 	const [currentUser, setCurrentUser] = useState(LOGIN_USER);
 	const [error, setError] = useState("");
 	const [isUser, setIsUser] = useState(false);
